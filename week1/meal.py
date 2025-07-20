@@ -1,11 +1,11 @@
 def main():
-    user = input("What time is it? (am/pm) ")
+    user: str = input("What time is it? (am/pm) ")
     user = convert(user)
     print(user)
 
 
 
-def convert(time):
+def convert(time: str) -> str:
     try:
         time = time.strip()
         if time.endswith("am") or time.endswith("pm"):
