@@ -3,8 +3,11 @@ d: dict = {
     'avocado': '50',
     'sweet cherries': '100',
 }
+#Many more
 
-for fruit in d:
+while True:
     user = input("Your fruit: ").lower().strip()
-    if user in fruit:
-        print(f"Calories: {d[user]}")
+
+    for fruit in d:
+        if user in fruit:
+            print(f"Calories: {d[user]}")
