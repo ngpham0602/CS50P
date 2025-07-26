@@ -6,7 +6,7 @@ def main():
     print(parse(input("HTML: ")))
 
 
-def parse(s):
+def parse(s: str) -> str | None:
     part = re.findall(r'src="(.*?)"', s)
     for url in part:
         if "youtube.com" in url:
