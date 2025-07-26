@@ -5,7 +5,7 @@ def main():
     else:
         print("Invalid")
 
-def is_valid(s):
+def is_valid(s: str) -> int:
     found_digit = False
     s = str(s)
     for c in s:
@@ -22,7 +22,5 @@ def is_valid(s):
         return 0
  
 
-
-
-
-main()
+if __name__ == "__main__":
+    main()

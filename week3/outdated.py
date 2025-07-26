@@ -1,4 +1,4 @@
-months: list = [
+months: list[str] = [
     "January",
     "February",
     "March",

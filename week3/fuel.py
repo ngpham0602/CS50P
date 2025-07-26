@@ -13,7 +13,7 @@ def main():
 
         
 
-def convert(s):
+def convert(s: str) -> str:
     first, second = s.split('/')
     first = int(first)
     second = int(second)
@@ -29,4 +29,6 @@ def convert(s):
     return f"{percentage}%"
 exit
 
-main()
+
+if __name__ == "__main__":
+    main() 

@@ -1,11 +1,8 @@
-def main():
-    user = input()
-    user = convert(user)
-    print(user)
-
-
-def convert(emoji):
+def convert(emoji: str) -> str:
     emoji = emoji.replace(':)', '🙂').replace(':(', '🙁')
     return emoji
 
-main()
+if __name__ == '__main__':
+    user = input()
+    user = convert(user)
+    print(user)
